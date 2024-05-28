@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <a href="miracles.html" class="logo">My Website</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About me</a></li>
+                <li class="active"><a href="miracles.html">My Website</a></li>
+                <li><a href="generic.html">My Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/damaris-jjm" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/DamarisJean" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <span class="date"></span>
+                    <h1>Share-Miracles
+                        <a href="#" class="icon brands fa-php"><span class="label">PHP</span></a>
+                        <a href="#" class="icon brands fa-laravel"><span class="label">Laravel</span></a>
+                        <a href="#" class="icon brands fa-react"><span class="label">React</span></a>
+                        <a href="#" class="icon brands fa-mysql"><span class="label">mySQL</span></a>
+                    </h1>
+                </header>
+                <p>This project is a heartfelt initiative designed to create a supportive community where individuals can share their personal miracles. As a developer and a Christian, this project is both a technical achievement and a personal passion.</p>
+                <h4><strong>Technical Overview</strong></h4>
+                <p>The frontend of this project is built using <strong>React.js</strong>, complemented by <strong>Tailwind</strong> CSS for styling. This combination ensures a modern, responsive design that works seamlessly across all devices. The backend is powered by <strong>Laravel 11</strong>, a robust PHP framework, and the data is stored in a <strong>MySQL</strong> database. For secure user authentication, I've implemented <strong>Laravel Sanctum</strong>. The website is deployed on <strong>Hostinger</strong>.</p>
+                <div class="image main"><img src="images/homepageMiracles.jpg" alt="" /></div>
+                <ul class="actions special">
+                    <li><a href="https://github.com/DamarisJean/Share-Miracles" class="button">Share-Miracles Github</a></li>
+                    <li><a href="https://share-miracles.com" class="button">Share-Miracles website</a></li>
+                </ul>
+            </section>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article>
+                    <header>
+                        <h2><a href="#">Share-Miracles Carousel</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Carousel.jpg" alt="" /></a>
+                    <p>
+                        One of the features of the website is the <strong>Miracles Carousel</strong>, which dynamically displays shared miracles in a visually appealing, interactive format using Framer Motion. 
+                    </p>
+                    <h4><strong>Component Structure</strong></h4>
+                    <ul>
+                        <li><strong>MiraclesCarousel</strong>: The main component that brings everything together.</li>
+                        <li><strong>MiracleItem</strong>: Represents each individual miracle within the carousel.</li>
+                        <li><strong>CarouselNavigation</strong>: Provides navigation buttons to move through the carousel.</li>
+                        <li><strong>CallToActionSection</strong>: Encourages users to share their own miracles.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <header>
+                        <h2><a href="#">Displayed Miracles</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/displayed.jpg" alt="" /></a>
+                    <p>One of the functionalities of the website is to display a <strong>list of shared miracles</strong>. This feature involves fetching data from the backend and rendering it on the frontend and providing users with a seamless experience to browse through shared miracles</p>
+                    <ul> 
+                        <h4><strong>Component Structure</strong></h4>
+
+                        <li><strong>Miracles</strong>: The main component that fetches and displays the list of miracles.</li>
+                        <li><strong>useFetchMiracleById</strong>: A custom hook for fetching miracle data from the backend.</li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h2><a href="#">Create Miracle</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/CreateMiracles.jpg" alt="Create Miracle" /></a>
+                    <p>This feature allows authenticated users to <strong>share their miracles</strong> by submitting a form. The form includes fields for a title, content, and an optional image.</p>
+                    
+                    <h4><strong>Component Structure</strong></h4>
+                    <ul>
+                        <li><strong>CreateMiracle</strong>: The primary component handling the form submission.</li>
+                        <li><strong>Images</strong>: A component for image selection.</li>
+                        <li><strong>PrimaryButton</strong>: A reusable button component for form actions.</li>
+                    </ul>
+                </article>
+                
+                
+                <article>
+                    <header>
+                        <h2><a href="#">User Profile</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/profile.png" alt="" /></a>
+                    <p>The user profile management feature allows users to update their profile information, change their password, and delete their account.</p>
+                    <h4><strong>Component Structure</strong></h4>
+                    <li><strong>UpdateProfileInformation</strong>: Handles updating user profile information.</li>
+                    <li><strong>UpdatePasswordForm</strong>:  Manages the functionality for changing the user password.</li>
+                    <li><strong>DeleteUserForm</strong>: Provides the ability to delete the user account.</li>
+
+                </article>
+            </section>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
