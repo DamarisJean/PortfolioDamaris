@@ -2764,8 +2764,8 @@ input[type="radio"]:focus + label:before {
 }
 
 .image.main img {
-  width: 80%;
-  margin-left: 10%;
+  width: 40%;
+  margin-left: 30%;
 }
 
 @media screen and (max-width: 736px) {
@@ -3440,7 +3440,6 @@ body.is-preload #wrapper.fade-in:before {
   cursor: default;
   text-align: center;
   z-index: 1;
-  min-height: 100vh;
 }
 
 #intro input,
